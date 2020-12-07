@@ -1,0 +1,5 @@
+@media screen and (max-width: 770px) {
+    body > main {
+        margin: 30px;
+    }
+} 

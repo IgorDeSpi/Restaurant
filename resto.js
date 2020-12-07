@@ -1,8 +1,7 @@
 document.querySelector('.main').innerHTML=''
 const mainContainer = document.querySelector('.main');
 
-let weekday = [ 'Sun', 'Mon', 'Tue', 
-'Wed', 'Thu', 'Fri', 'Sat' ];
+let weekday = [ 'Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat' ];
 
 const horaire = [
     { //Lundi

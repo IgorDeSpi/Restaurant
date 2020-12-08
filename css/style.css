@@ -1,4 +1,4 @@
-
+/* Navbar */
 @font-face {
     font-family: 'gabriele-bad';
     src: url(/Fonts/gabriele-bad.ttf)
@@ -58,3 +58,17 @@ main {
 .footer {
     font-family: 'gabriele-bad';
 }
+/* Navbar */
+
+/* Cards of the menu */
+.tailleImage{
+    object-fit: cover;
+}
+
+/* Responsive for the cards */
+@media screen and (max-width: 770px) {
+    body > main {
+        margin: 30px;
+    }
+} 
+/* Cards of the menu */

@@ -1,6 +1,7 @@
-document.querySelector('.main').innerHTML=''
-const main = document.querySelector('.main');
+document.querySelector('.mainhoraire').innerHTML=''
+const main = document.querySelector('.mainhoraire');
 
+//=====================================HORAIRE=====================================//
 let weekday = [ 'Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat' ];
 
 const horaire = [
@@ -41,13 +42,13 @@ const horaire = [
     },
     { //Samedi
         jour: weekday[6],
-        hours_Start: 12,
-        hours_Close: 23,
+        hours_Start1: 12,
+        hours_Close1: 23,
     },
     { //Dimanche
         jour: weekday[0],
-        hours_Start: 12,
-        hours_Close: 23,
+        hours_Start1: 12,
+        hours_Close1: 23,
     },
 ]
 
@@ -55,22 +56,15 @@ let today = new Date
 
 for (let element of horaire) {
     const alljour = document.createElement('div')
-    if ( weekday[6] == weekday[today.getDay()] || weekday[0] == weekday[today.getDay()]) {
+    alljour.className= 'jour'
+    //-----------------Open or Closed-----------------//
+    if (element.jour == weekday[today.getDay()] ) {
         let heure = today.getHours();
-        if (heure >= element.hours_Start && heure <= element.hours_Close) {
-            alljour.style = 'background-color: green;'
+        if ((heure >= element.hours_Start1 && heure < element.hours_Close1) || (heure >= element.hours_Start2 && heure < element.hours_Close2)) {
+            alljour.style = 'border: 2px green solid; color: green'
         }
         else {
-            alljour.style = 'color: red;'
-        }
-    }
-    else if (element.jour == weekday[today.getDay()] ) {
-        let heure = today.getHours();
-        if (heure >= element.hours_Start1 && heure < element.hours_Close1 || heure >= element.hours_Start2 && heure < element.hours_Close2) {
-            alljour.style = 'background-color: green;'
-        }
-        else {
-            alljour.style = 'color: red;'
+            alljour.style = 'border: 2px red solid; color: red'
         }
     }
     main.appendChild(alljour)
@@ -80,9 +74,13 @@ for (let element of horaire) {
     alljour.appendChild(jour)
 
     if (element.jour == 'Sat' || element.jour == 'Sun') {
-        const heureDebut = document.createElement('p')
-        heureDebut.textContent = element.hours_Start +":00 "+ element.hours_Close +":00"
-        alljour.appendChild(heureDebut)
+        const heureWeekend = document.createElement('p')
+        heureWeekend.textContent = element.hours_Start1 +":00 "+ element.hours_Close1 +":00"
+        alljour.appendChild(heureWeekend)
+        const heurevide = document.createElement('p')
+        heurevide.textContent = "Kill Bg"
+        heurevide.style = "color: white;"
+        alljour.appendChild(heurevide)
     }
     else{
         const heureDebut = document.createElement('p')
@@ -93,3 +91,4 @@ for (let element of horaire) {
         alljour.appendChild(heureFin)
     }
 }
+//=====================================HORAIRE FIN=====================================//

@@ -1,4 +1,4 @@
-
+/* Navbar */
 @font-face {
     font-family: 'gabriele-bad';
     src: url(/Restaurant/Fonts/gabriele-bad.ttf)
@@ -44,3 +44,17 @@ body > header > div > nav > div.navbar-brand > a.navbar-burger.burger > span:nth
 .footer {
     font-family: 'gabriele-bad';
 }
+/* Navbar */
+
+/* Cards of the menu */
+.tailleImage{
+    object-fit: cover;
+}
+
+/* Responsive for the cards */
+@media screen and (max-width: 770px) {
+    body > main {
+        margin: 30px;
+    }
+} 
+/* Cards of the menu */

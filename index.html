@@ -4,26 +4,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
+
     <!-- <link rel="stylesheet" href="/Restaurant/css/debug.css"> -->
-    <link rel="stylesheet" href="/Restaurant/css/nomarlize.css">
-    <link rel="stylesheet" href="/Restaurant/css/style.css">
-    <link rel="stylesheet" type="text/css" href="resto.css" /> <!-- à passer dans le style.css -->
+    <link rel="stylesheet" type="text/css" href="/css/nomarlize.css">
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css"> <!-- Bulma -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.4/dist/css/bulma-carousel.min.css">
+    <link href="bulma-carousel/dist/css/bulma-carousel.min.css" rel="stylesheet">
     <link href="https://use.fontawesome.com/releases/v5.12.0/css/all.css" rel="stylesheet">
 
     <title>Restaurant Project</title>
 </head>
 
 <body>
-    <!-- HEADER -->
-    <header class="section">
+     <!-- HEADER -->
+     <header class="section">
         <div class="container">
-            <nav class="navbar is-transparent" role="navigation" aria-label="main navigation">
+            <nav class="navbar" role="navigation" aria-label="main navigation">
                 <div class="navbar-brand">
                     <a class="navbar-item" href="" target="#home">
-                        <img src="/Restaurant/Images/logo-nenu.png" alt="logo-restaurant" style="max-height: 150px"
-                            class="is-rounded">
+                        <img class="tailleImage" src="/Images/logo-nenu.png" alt="logo-restaurant"
+                            style="max-height: 150px" class="is-rounded">
                     </a>
                     <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false"
                         data-target='navMenu'>
@@ -39,22 +40,22 @@
                             <a href="#" class="navbar-item is-active" id="home">
                                 Home
                             </a>
-                            <a href="#" class="navbar-item" id="menu">
+                            <a href="/index-menu.html" class="navbar-item" id="menu">
                                 Menu
                             </a>
                             <a href="#" class="navbar-item is-white" id="basket">
-                                Your Order
+                                Cart
                             </a>
                             <div class="field has-addons">
                                 <div class="control">
-                                  <input class="input" type="text" placeholder="Find a dish">
+                                    <input class="input" type="text" placeholder="Find a dish">
                                 </div>
                                 <div class="control">
-                                  <a class="button">
-                                    Search
-                                  </a>
+                                    <a class="button">
+                                        Search
+                                    </a>
                                 </div>
-                              </div>
+                            </div>
 
                         </div>
                     </div>
@@ -62,217 +63,80 @@
             </nav>
         </div>
     </header>
-   <!-- MAIN -->
-  <!-- Menu -->
-    <main>
-        <h1 class="title has-text-centered "> Menu </h1>
-        <p class="has-text-centered is-size-6 is-italic has-text-weight-medium">Here you can find our menu based on
-            Vietnamese cuisine:</p>
+    <!-- CAROUSEL -->
 
-        <!-- Section with all the cards -->
-        <section class="my-6 columns is-centered is-flex-wrap-wrap is-tablet">
-
-            <!-- First plate card -->
-            <div class="card column m-2 p-0 is-2">
-                <header class="card-image">
-                    <figure class="image is-4by3 tailleImage">
-                        <img src="./Images/Food/Food Cala.jpg" alt="Plate with fried squid">
-                    </figure>
-                </header>
-                <main class="p-2  is-flex-direction-column">
-                    <h1 class="card-header-title is-centered title is-4">Fried shrimp</h1>
-                    <p class="subtitle is-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam tristique
-                        dolor vitae urna aliquam, eget. </p>
-                
-                    <p>Price :</p>
-                    <p class="has-text-right has-text-weight-semibold">12€</p>
-
-                    </main>
+    <section class="section">
+        <div class="container is-clipped">
+          <div id="slider">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image is-16by9 is-covered">
+                  <img
+                    src="/Images/FOOD/Food chou chinois.jpg"
+                    alt=""
+                  />
+                </figure>
+              </div>
+              
             </div>
-            <!-- First plate -->
-
-            <!-- Second plate -->
-            <div class="card column m-2 p-0 is-2">
-                <header class="card-image">
-                    <figure class="image is-4by3 tailleImage">
-                        <img src="./Images/Food/Food roulo.jpg" alt="Plate with Spring Rolls">
-                    </figure>
-                </header>
-                <main class="p-2  is-flex-direction-column">
-                    <h1 class="card-header-title is-centered title is-4">Spring Rolls</h1>
-                    <p class="subtitle is-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam tristique
-                        dolor vitae urna aliquam, eget. </p>
-
-                    <p>Price :</p>
-                    <p class="has-text-right has-text-weight-semibold">15€</p>
-
-                    </main>
-            </div>
-            <!-- Second plate -->
-
-            <!-- Third plate -->
-            <div class="card column m-2 p-0 is-2">
-                <header class="card-image">
-                    <figure class="image is-4by3 tailleImage">
-                        <img src="./Images/Food/Food nouilles.jpg" alt="Bowl of noodles">
-                    </figure>
-                </header>
-                <main class="p-2  is-flex-direction-column">
-                    <h1 class="card-header-title is-centered title is-4">Noodles</h1>
-                    <p class="subtitle is-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam tristique
-                        dolor vitae urna aliquam, eget. </p>
-
-                    <p>Price :</p>
-                    <p class="has-text-right has-text-weight-semibold">18€</p>
-
-                    </main>
-            </div>
-            <!-- Third plate -->
-
-            <!-- Fourth plate -->
-            <div class="card column m-2 p-0 is-2">
-                <header class="card-image">
-                    <figure class="image is-4by3 tailleImage">
-                        <img src="./Images/Food/Food palourdes.jpg" alt="Bowl of clam soup">
-                    </figure>
-                </header>
-                <main class="p-2  is-flex-direction-column">
-                    <h1 class="card-header-title is-centered title is-4">Clams</h1>
-                    <p class="subtitle is-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam tristique
-                        dolor vitae urna aliquam, eget. </p>
-
-                    <p>Price :</p>
-                    <p class="has-text-right has-text-weight-semibold">13€</p>
-
-                    </main>
-            </div>
-            <!-- Fourth plate -->
-
-            <!-- Fifth plate -->
-            <div class="card column m-2 p-0 is-2">
-                <header class="card-image">
-                    <figure class="image is-4by3 tailleImage">
-                        <img src="./Images/Food/Food papaye.jpg" alt="Salad of duck and papaya">
-                    </figure>
-                </header>
-                <main class="p-2  is-flex-direction-column">
-                    <h1 class="card-header-title is-centered title is-4">Papaya</h1>
-                    <p class="subtitle is-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam tristique
-                        dolor vitae urna aliquam, eget. </p>
-
-                    <p>Price :</p>
-                    <p class="has-text-right has-text-weight-semibold">12€</p>
-
-                    </main>
-            </div>
-            <!-- Fifth plate -->
-
-            <!-- Sixth plate -->
-            <div class="card column m-2 p-0 is-2">
-                <header class="card-image">
-                    <figure class="image is-4by3 tailleImage">
-                        <img src="./Images/Food/Food poulet.jpg" alt="Plate of chicken curry">
-                    </figure>
-                </header>
-                <main class="p-2  is-flex-direction-column">
-                    <h1 class="card-header-title is-centered title is-4">Chicken curry</h1>
-                    <p class="subtitle is-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam tristique
-                        dolor vitae urna aliquam, eget. </p>
-
-                    <p>Price :</p>
-                    <p class="has-text-right has-text-weight-semibold">17€</p>
-
-                    </main>
-            </div>
-            <!-- Sixth plate -->
-
-            <!-- Seventh plate -->
-            <div class="card column m-2 p-0 is-2">
-                <header class="card-image">
-                    <figure class="image is-4by3 tailleImage">
-                        <img src="./Images/Food/Food ventrechje.jpg" alt="Plate of Ventrechje">
-                    </figure>
-                </header>
-                <main class="p-2  is-flex-direction-column">
-                    <h1 class="card-header-title is-centered title is-4">Ventrechje</h1>
-                    <p class="subtitle is-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam tristique
-                        dolor vitae urna aliquam, eget. </p>
-
-                    <p>Price :</p>
-                    <p class="has-text-right has-text-weight-semibold">16€</p>
-
-                </main>
-            </div>
-            <!-- Seventh plate -->
-
-            <!-- Eighth plate -->
-            <div class="card column m-2 p-0 is-2">
-                <header class="card-image">
-                    <figure class="image is-4by3 tailleImage">
-                        <img src="./Images/Food/Food-Lunch.jpg"
-                            alt="Bowl with assorted chicken, rice, chilli pepper, white cabbage">
-                    </figure>
-                </header>
-                <main class="p-2  is-flex-direction-column">
-                    <h1 class="card-header-title is-centered title is-4">Lunch</h1>
-                    <p class="subtitle is-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam tristique
-                        dolor vitae urna aliquam, eget. </p>
-
-                    <p>Price :</p>
-                    <p class="has-text-right has-text-weight-semibold">14€</p>
-
-                </main>
-            </div>
-            <!-- Eighth plate -->
-
-            <!-- Ninth plate -->
-            <div class="card column m-2 p-0 is-2">
-                <header class="card-image">
-                    <figure class="image is-4by3 tailleImage">
-                        <img src="./Images/Food/Food-poiro.jpg" alt="Leek Salad">
-                    </figure>
-                </header>
-                <main class="p-2  is-flex-direction-column">
-                    <h1 class="card-header-title is-centered title is-4">Leeks</h1>
-                    <p class="subtitle is-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam tristique
-                        dolor vitae urna aliquam, eget. </p>
-
-                    <p>Price :</p>
-                    <p class="has-text-right has-text-weight-semibold">8€</p>
-
-                </main>
-            </div>
-            <!-- Ninth plate -->
-
-            <!-- Tenth plate -->
-            <div class="card column m-2 p-0 is-2">
-                <header class="card-image">
-                    <figure class="image is-4by3 tailleImage">
-                        <img src="./Images/Food/Food desert.jpg" alt="Chocolate">
-                    </figure>
-                </header>
-                <main class="p-2  is-flex-direction-column">
-                    <h1 class="card-header-title is-centered title is-4">Chocolate dessert</h1>
-                    <p class="subtitle is-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam tristique
-                        dolor vitae urna aliquam, eget. </p>
-
-                    <p>Price :</p>
-                    <p class="has-text-right has-text-weight-semibold">10€</p>
-
-                </main>
-            </div>
-            <!-- Tenth plate -->
-        </section>
-
-
-    </main>
-    <!-- End of the menu -->
   
-    <!-- FOOTER -->
+            <div class="card">
+              <div class="card-image">
+                <figure class="image is-16by9 is-covered">
+                  <img
+                    src="/Images/Light/light salle.jpg"
+                    alt=""
+                  />
+                </figure>
+              </div>
+              
+            </div>
+  
+            <div class="card">
+              <div class="card-image">
+                <figure class="image is-16by9 is-covered">
+                  <img
+                    src="/Images/FOOD/Food bar.jpg"
+                    alt=""
+                  />
+                </figure>
+              </div>
+              
+            </div>
+  
+            <div class="card">
+              <div class="card-image">
+                <figure class="image is-16by9 is-covered">
+                  <img
+                    src="/Images/Plate-&-bowl/bow black.jpg"
+                    alt=""
+                  />
+                </figure>
+              </div>
+              
+            </div>
+  
+            <div class="card">
+              <div class="card-image">
+                <figure class="image is-16by9 is-covered">
+                  <img
+                    src="/Images/FOOD/food okras.jpg"
+                    alt=""
+                  />
+                </figure>
+              </div>
+              
+            </div>
+  
+            
+          </div>
+        </div>
+      </section>
+      <!-- FOOTER -->
     <footer class="footer">
         <div class="content has-text-centered">
             <p>
-                <strong>Nenu</strong> restaurant project by <a href="https://github.com/NalessoAxel">Axel Nalesso</a>,
+                <strong>Restaurant</strong> project by <a href="https://github.com/NalessoAxel">Axel Nalesso</a>,
                 <a href="https://github.com/Cemil1000">Cemil Yilmaz</a>, <a href="https://github.com/IgorDeSpi">
                     Igor de Spirlet</a>, <a href="https://github.com/abdelilahzaidi">Abdelilah Zaidi</a>.Project made
                 during our training bootcamp at <a href="https://becode.org/">BeCode</a>. 🍜 🥢.
@@ -281,7 +145,8 @@
             <i class="fab fa-instagram fa-2x"></i>
         </div>
     </footer>
-    <script src="/Restaurant/burger.js"></script>
+        <script src="bulma-carousel/dist/js/bulma-carousel.min.js"></script>
+        <script src="js/burger.js" type="text/javascript"></script>
+        <script src="/js/carousel.js"></script>
 </body>
-
 </html>

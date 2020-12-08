@@ -1,11 +1,11 @@
 
 @font-face {
     font-family: 'gabriele-bad';
-    src: url(/Restaurant/Fonts/gabriele-bad.ttf)
+    src: url(/Fonts/gabriele-bad.ttf)
 }
 
 .container {
-    padding: 0 30px;   
+    padding: 0 30px;
 }
 
 body > header > div > nav > div.navbar-brand > a > figure {
@@ -41,6 +41,20 @@ body > header > div > nav > div.navbar-brand > a.navbar-burger.burger > span:nth
     height: 3px;
     width: 30px;
 }
+main {
+    font-family: 'gabriele-bad';
+}
+.tailleImage{
+    object-fit: cover;
+}
+
+
+
+@media screen and (max-width: 770px) {
+    body > main {
+        margin: 30px;
+    }
+} 
 .footer {
     font-family: 'gabriele-bad';
 }

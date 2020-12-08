@@ -44,17 +44,6 @@ body > header > div > nav > div.navbar-brand > a.navbar-burger.burger > span:nth
 main {
     font-family: 'gabriele-bad';
 }
-.tailleImage{
-    object-fit: cover;
-}
-
-
-
-@media screen and (max-width: 770px) {
-    body > main {
-        margin: 30px;
-    }
-} 
 .footer {
     font-family: 'gabriele-bad';
 }

@@ -88,7 +88,18 @@ for (let element of horaire) {
         heurevide.style = "color: red;"
         alljour.appendChild(heurevide)
 
+    } else if (element.jour == 'Mon') {
+        const heureMon = document.createElement('p')
+        heureMon.classList.add('monday')
+        heureMon.textContent = 'Close'
+        heureMon.style = "color: red;"
+        alljour.appendChild(heureMon)
+        const heurevide = document.createElement('p')
+        heurevide.textContent = "Close"
+        heurevide.style = "color: red;"
+        alljour.appendChild(heurevide)
 
+       
     } else {
         const heureDebut = document.createElement('p')
         heureDebut.textContent = element.hours_Start1 + ":00 " + element.hours_Close1 + ":30"

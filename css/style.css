@@ -4,9 +4,9 @@
     src: url(/Fonts/gabriele-bad.ttf)
 }
 
-.container {
+/* .container {
     padding: 0 30px;
-}
+} */
 
 body > header > div > nav > div.navbar-brand > a > figure {
     display: flex;
@@ -17,7 +17,7 @@ body > header > div > nav > div.navbar-brand > a > img {
     border-radius: 100%;
 }
 .navbar-menu {
-    font-size: 28px;
+    font-size: 24px;
     font-family: 'gabriele-bad';
 }
 .navbar-start {
@@ -79,10 +79,33 @@ main {
     width: 303px;
     margin: auto;
 }
-
+.monday {
+    display: inline-block;
+    padding-right: 38px;
+    border: 2px white solid;
+    border-radius: 8%;
+}
 .jour{
     display: inline-block;
     padding: 10px;
     border: 2px white solid;
     border-radius: 8%;
+}
+body > main > div:nth-child(2) {
+    margin-left: 28px;
+}
+
+body > div > div.field.is-grouped {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+body > div > div:nth-child(3) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+body > div > div:nth-child(5) > div {
+    display: flex;
+    justify-content: flex-end;
 }

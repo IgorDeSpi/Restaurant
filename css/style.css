@@ -1,0 +1,60 @@
+/* Navbar */
+@font-face {
+    font-family: 'gabriele-bad';
+    src: url(/Restaurant/Fonts/gabriele-bad.ttf)
+}
+
+.container {
+    padding: 0 30px;   
+}
+
+body > header > div > nav > div.navbar-brand > a > figure {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+body > header > div > nav > div.navbar-brand > a > img {
+    border-radius: 100%;
+}
+.navbar-menu {
+    font-size: 28px;
+    font-family: 'gabriele-bad';
+}
+.navbar-start {
+    margin: 20px;
+}
+body > header > div > nav > div.navbar-brand > a.navbar-burger.burger {
+    width: 16px;
+    height: 9rem;
+    padding: 40px;
+}
+body > header > div > nav > div.navbar-brand > a.navbar-burger.burger > span:nth-child(1) {
+    height: 3px;
+    margin-bottom: 4px;
+    width: 30px;
+}
+body > header > div > nav > div.navbar-brand > a.navbar-burger.burger > span:nth-child(2) {
+    height: 3px;
+    width: 30px;
+}
+body > header > div > nav > div.navbar-brand > a.navbar-burger.burger > span:nth-child(3) {
+    height: 3px;
+    width: 30px;
+}
+.footer {
+    font-family: 'gabriele-bad';
+}
+/* Navbar */
+
+/* Cards of the menu */
+.tailleImage{
+    object-fit: cover;
+}
+
+/* Responsive for the cards */
+@media screen and (max-width: 770px) {
+    body > main {
+        margin: 30px;
+    }
+} 
+/* Cards of the menu */

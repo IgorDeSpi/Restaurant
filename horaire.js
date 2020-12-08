@@ -1,7 +1,6 @@
+//=====================================HORAIRE=====================================//
 document.querySelector('.mainhoraire').innerHTML=''
 const main = document.querySelector('.mainhoraire');
-
-//=====================================HORAIRE=====================================//
 let weekday = [ 'Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat' ];
 
 const horaire = [

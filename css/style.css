@@ -290,3 +290,18 @@ body>div>div:nth-child(5)>div {
 body > main > section > div:nth-child(1) > main > p.has-text-centered > button {
     font-family: 'gabriele-bad';
 }
+/*=====================================HORAIRE=====================================*/
+.mainhoraire{
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 303px;
+    margin: auto;
+}
+
+.jour{
+    display: inline-block;
+    padding: 10px;
+    border: 2px white solid;
+    border-radius: 8%;
+}
+/*=====================================HORAIRE=====================================*/

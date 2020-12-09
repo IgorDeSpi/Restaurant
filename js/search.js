@@ -131,7 +131,7 @@ document.querySelector('#RechercheBar')
 
 function optionSearch(pattern) {
     const usertape = []
-
+ 
     for(let filtre of menu){
         if(filtre.nom.toLowerCase().match(pattern))
     	usertape.push(filtre)

@@ -1,25 +1,26 @@
 /* Navbar */
 @font-face {
     font-family: 'gabriele-bad';
-    src: url(/Fonts/gabriele-bad.ttf)
+    src: url(./Fonts/gabriele-bad.ttf)
 }
 
 .container {
     padding: 0 30px;
-    
 }
+
 nav.navbar {
     background: transparent;
-    
 }
+
 body {
-    background-image: url(/Images/Canp\ olive.jpg);
+    background-image: url(./Images/Canp\ olive.jpg);
     min-height: 100%;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
 }
+
 body>header>div>nav>div.navbar-brand>a>figure {
     display: flex;
     justify-content: center;
@@ -30,19 +31,20 @@ body>header>div>nav>div.navbar-brand>a>img {
     border-radius: 100%;
     transition: .2s;
 }
+
 body>header>div>nav>div.navbar-brand>a>img:hover {
-    /* -ms-transform: scale(1.25); 
-    -webkit-transform: scale(1.25);  */
-    transform: scale(1.25); 
+    transform: scale(1.25);
 }
 
 .navbar-menu {
     font-size: 24px;
     font-family: 'gabriele-bad';
 }
+
 .navbar-item a:hover {
-    transform: scale(1.25); 
+    transform: scale(1.25);
 }
+
 .navbar-start {
     margin: 20px;
 }
@@ -72,7 +74,8 @@ body>header>div>nav>div.navbar-brand>a.navbar-burger.burger>span:nth-child(3) {
 main {
     font-family: 'gabriele-bad';
 }
-button:nth-child(1){
+
+button:nth-child(1) {
     font-family: 'gabriele-bad';
 }
 
@@ -93,15 +96,15 @@ body>div:nth-child(3)>div>div.column.is-6 {
     flex-direction: column;
     align-items: center;
 }
-body>div.container:nth-child(3) > div:nth-child(1) > div:nth-child(2) {
+
+body>div.container:nth-child(3)>div:nth-child(1)>div:nth-child(2) {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
-
 }
-body>div.container:nth-child(4) > div:nth-child(1) > div:nth-child(1){
+
+body>div.container:nth-child(4)>div:nth-child(1)>div:nth-child(1) {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -133,30 +136,30 @@ body>div:nth-child(2)>div>div:nth-child(2)>p>a {
     object-fit: cover;
 }
 
-.card{
+.card {
     height: 100%;
 }
 
-.main{
+.main {
     height: 165px;
 }
 
-
-div.column:nth-child(1) > iframe:nth-child(1){
+div.column:nth-child(1)>iframe:nth-child(1) {
     display: block;
     margin: auto;
 }
-
 
 /* Responsive for the cards */
 @media screen and (max-width: 770px) {
     body>main {
         margin: 30px;
     }
-    .main{
+
+    .main {
         height: auto;
     }
-    div.column:nth-child(1) > iframe:nth-child(1){
+
+    div.column:nth-child(1)>iframe:nth-child(1) {
         height: 400px;
         width: 450px;
     }
@@ -166,10 +169,12 @@ div.column:nth-child(1) > iframe:nth-child(1){
     body>main {
         margin: 30px;
     }
-    .main{
+
+    .main {
         height: auto;
     }
-    div.column:nth-child(1) > iframe:nth-child(1){
+
+    div.column:nth-child(1)>iframe:nth-child(1) {
         height: 250px;
         width: 300px;
     }
@@ -187,14 +192,12 @@ div.column:nth-child(1) > iframe:nth-child(1){
 .monday {
     display: inline-block;
     padding-right: 38px;
-    
     border-radius: 8%;
 }
 
 .jour {
     display: inline-block;
     padding: 10px;
-    
     border-radius: 8%;
 }
 
@@ -276,42 +279,41 @@ body>div>div:nth-child(5)>div {
     color: #fff;
     padding: 1em 0;
     filter: alpha(opacity=0);
-    
 }
 
 /* ABOUT US  */
 #findUs {
     display: flex;
-    flex-direction: row ;
-    
+    flex-direction: row;
 }
-#findUs > div:nth-child(2) {
+
+#findUs>div:nth-child(2) {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    
-    
 }
-#findUs > div:nth-child(2) > h2 {
+
+#findUs>div:nth-child(2)>h2 {
     text-align: center;
     font-size: 28px;
 }
-#findUs > div:nth-child(2) > p {
+
+#findUs>div:nth-child(2)>p {
     text-align: center;
 }
 
-body > main > section > div:nth-child(1) > main > p.has-text-centered > button {
+body>main>section>div:nth-child(1)>main>p.has-text-centered>button {
     font-family: 'gabriele-bad';
 }
+
 /*=====================================HORAIRE=====================================*/
-.mainhoraire{
+.mainhoraire {
     flex-direction: row;
     flex-wrap: wrap;
     width: 303px;
     margin: auto;
 }
-
-.jour{
+.jour {
     display: inline-block;
     padding: 10px;
     border: 2px white solid;
@@ -323,45 +325,44 @@ body > main > section > div:nth-child(1) > main > p.has-text-centered > button {
 
 /* The Modal (background) */
 .modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
+    display: none;/* Hidden by default */
+    position: fixed;/* Stay in place */
+    z-index: 1;/* Sit on top */
+    padding-top: 100px;/* Location of the box */
     left: 0;
     top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-  }
-  
-  /* Modal Content */
-  .modal-content {
+    width: 100%;/* Full width */
+    height: 100%;/* Full height */
+    overflow: auto;/* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);/* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);/* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
     background-color: #fefefe;
     margin: auto;
     padding: 20px;
     border: 1px solid #888;
     width: 80%;
     height: 60%;
-  }
-  
-  /* The Close Button */
-  .close {
+}
+
+/* The Close Button */
+.close {
     color: #aaaaaa;
     float: right;
     font-size: 28px;
     font-weight: bold;
-  }
-  
-  .close:hover,
-  .close:focus {
+}
+
+.close:hover,.close:focus {
     color: #000;
     text-decoration: none;
     cursor: pointer;
-  }
+}
 
-  .content-section {
+.content-section {
     margin: 1em;
 }
 
@@ -371,9 +372,6 @@ body > main > section > div:nth-child(1) > main > p.has-text-centered > button {
     padding: 0 1.5em;
 }
 
-
-
-  
 .cart-header {
     font-weight: bold;
     font-size: 1.25em;
@@ -424,29 +422,28 @@ body > main > section > div:nth-child(1) > main > p.has-text-centered > button {
     height: 100px;
     overflow-y: scroll;
     scrollbar-width: thin;
-  }
-  /* modal part*/
+}
 
-  /* Modal Content */
+/* modal part*/
+/* Modal Content */
 .modal-content {
     background-color: #fefefe;
     margin: auto;
     padding: 20px;
     border: 1px solid #888;
     width: 80%;
-  }
-  
-  /* The Close Button */
-  .close {
+}
+
+/* The Close Button */
+.close {
     color: #aaaaaa;
     float: right;
     font-size: 28px;
     font-weight: bold;
-  }
-  
-  .close:hover,
-  .close:focus {
+}
+
+.close:hover,.close:focus {
     color: #000;
     text-decoration: none;
     cursor: pointer;
-  }
+}

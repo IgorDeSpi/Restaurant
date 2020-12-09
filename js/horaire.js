@@ -71,7 +71,6 @@ for (let element of horaire) {
             alljour.style = 'border: 2px red solid; color: red'
         }
     }
-    
     main.appendChild(alljour)
 
     const jour = document.createElement('p')

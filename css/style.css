@@ -303,8 +303,6 @@ body>div>div:nth-child(5)>div {
 body > main > section > div:nth-child(1) > main > p.has-text-centered > button {
     font-family: 'gabriele-bad';
 }
-<<<<<<< HEAD
-=======
 /*=====================================HORAIRE=====================================*/
 .mainhoraire{
     flex-direction: row;
@@ -319,9 +317,7 @@ body > main > section > div:nth-child(1) > main > p.has-text-centered > button {
     border: 2px white solid;
     border-radius: 8%;
 }
-
-
-
+/*=====================================HORAIRE=====================================*/
 
 /* modal part*/
 
@@ -454,7 +450,3 @@ body > main > section > div:nth-child(1) > main > p.has-text-centered > button {
     text-decoration: none;
     cursor: pointer;
   }
-
-/*=====================================HORAIRE=====================================*/
-
->>>>>>> 36fd2584f0090b14d8c2fe8561695acb8bdd6ec5

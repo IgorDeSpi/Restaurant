@@ -122,9 +122,6 @@ for (let element of menu){
     const iconAchat = document.createElement('i');
     iconAchat.className = 'fas fa-cart-plus'
     lienAchat.appendChild(iconAchat);
-
-    const basket = document.createElement('p')
-
 }
 
 document.querySelector('#RechercheBar')
@@ -197,7 +194,7 @@ function optionSearch(pattern) {
         lienAchat.className = 'button'
         lienAchat.textContent = 'Add to Basket';
         allAchat.appendChild(lienAchat);
-    
+
         const iconAchat = document.createElement('i');
         iconAchat.className = 'fas fa-cart-plus'
         lienAchat.appendChild(iconAchat);

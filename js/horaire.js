@@ -98,7 +98,6 @@ for (let element of horaire) {
         heurevide.style = "color: red;"
         alljour.appendChild(heurevide)
 
-
     } else {
         const heureDebut = document.createElement('p')
         heureDebut.textContent = element.hours_Start1 + ":00 " + element.hours_Close1 + ":30"

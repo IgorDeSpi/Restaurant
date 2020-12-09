@@ -40,8 +40,10 @@ const horaire = [{ //Lundi
     },
     { //Samedi
         jour: weekday[6],
-        hours_Start1: 12,
-        hours_Close1: 23,
+        hours_Start1: 11,
+        hours_Close1: 14,
+        hours_Start2: 18,
+        hours_Close2: 22,
     },
     { //Dimanche
         jour: weekday[0],
@@ -51,8 +53,13 @@ const horaire = [{ //Lundi
 ]
 
 let today = new Date
+    const text = document.createElement('h2')
+    text.innerText = 'Opening hours'
+    text.style.textAlign = 'center'
+    main.appendChild(text)
 
 for (let element of horaire) {
+    
     const alljour = document.createElement('div')
     alljour.className = 'jour'
     //-----------------Open or Closed-----------------//
@@ -64,25 +71,28 @@ for (let element of horaire) {
             alljour.style = 'border: 2px red solid; color: red'
         }
     }
+    
     main.appendChild(alljour)
 
     const jour = document.createElement('p')
     jour.textContent = element.jour
     alljour.appendChild(jour)
 
-
-    if (element.jour == 'Sat') {
-        const heureSat = document.createElement('p')
-        heureSat.textContent = element.hours_Start1 + ":00 " + element.hours_Close1 + ":00"
-        alljour.appendChild(heureSat)
-        const heurevide = document.createElement('p')
-        heurevide.textContent = "Kill Bg"
-        heurevide.style = "color: white;"
-        alljour.appendChild(heurevide)
-    } else if (element.jour == 'Sun') {
+    if (element.jour == 'Sun') {
         const heureSun = document.createElement('p')
         heureSun.textContent = element.hours_Start1 + ":00 " + element.hours_Close1 + ":30"
         alljour.appendChild(heureSun)
+        const heurevide = document.createElement('p')
+        heurevide.textContent = "Close"
+        heurevide.style = "color: red;"
+        alljour.appendChild(heurevide)
+
+    } else if (element.jour == 'Mon') {
+        const heureMon = document.createElement('p')
+        heureMon.classList.add('monday')
+        heureMon.textContent = 'Close'
+        heureMon.style = "color: red;"
+        alljour.appendChild(heureMon)
         const heurevide = document.createElement('p')
         heurevide.textContent = "Close"
         heurevide.style = "color: red;"

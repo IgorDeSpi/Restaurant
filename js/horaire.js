@@ -1,43 +1,42 @@
 //=====================================HORAIRE=====================================//
-document.querySelector('.mainhoraire').innerHTML=''
+document.querySelector('.mainhoraire').innerHTML = ''
 const main = document.querySelector('.mainhoraire');
-let weekday = [ 'Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat' ];
+let weekday = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
 
-const horaire = [
-    { //Lundi
+const horaire = [{ //Lundi
         jour: weekday[1],
-        hours_Start1: 10,
-        hours_Close1: 15,
+        hours_Start1: 11,
+        hours_Close1: 14,
         hours_Start2: 18,
-        hours_Close2: 23,
+        hours_Close2: 22,
     },
     { //Mardi
         jour: weekday[2],
-        hours_Start1: 10,
-        hours_Close1: 15,
+        hours_Start1: 11,
+        hours_Close1: 14,
         hours_Start2: 18,
-        hours_Close2: 23,
+        hours_Close2: 22,
     },
     { //Mercredi
         jour: weekday[3],
-        hours_Start1: 10,
-        hours_Close1: 15,
+        hours_Start1: 11,
+        hours_Close1: 14,
         hours_Start2: 18,
-        hours_Close2: 23,
+        hours_Close2: 22,
     },
     { //Jeudi
         jour: weekday[4],
-        hours_Start1: 10,
-        hours_Close1: 15,
+        hours_Start1: 11,
+        hours_Close1: 14,
         hours_Start2: 18,
-        hours_Close2: 23,
+        hours_Close2: 22,
     },
     { //Vendredi
         jour: weekday[5],
-        hours_Start1: 10,
-        hours_Close1: 15,
+        hours_Start1: 11,
+        hours_Close1: 14,
         hours_Start2: 18,
-        hours_Close2: 23,
+        hours_Close2: 22,
     },
     { //Samedi
         jour: weekday[6],
@@ -46,8 +45,8 @@ const horaire = [
     },
     { //Dimanche
         jour: weekday[0],
-        hours_Start1: 12,
-        hours_Close1: 23,
+        hours_Start1: 11,
+        hours_Close1: 14,
     },
 ]
 
@@ -55,14 +54,13 @@ let today = new Date
 
 for (let element of horaire) {
     const alljour = document.createElement('div')
-    alljour.className= 'jour'
+    alljour.className = 'jour'
     //-----------------Open or Closed-----------------//
-    if (element.jour == weekday[today.getDay()] ) {
+    if (element.jour == weekday[today.getDay()]) {
         let heure = today.getHours();
         if ((heure >= element.hours_Start1 && heure < element.hours_Close1) || (heure >= element.hours_Start2 && heure < element.hours_Close2)) {
             alljour.style = 'border: 2px green solid; color: green'
-        }
-        else {
+        } else {
             alljour.style = 'border: 2px red solid; color: red'
         }
     }
@@ -72,21 +70,31 @@ for (let element of horaire) {
     jour.textContent = element.jour
     alljour.appendChild(jour)
 
-    if (element.jour == 'Sat' || element.jour == 'Sun') {
-        const heureWeekend = document.createElement('p')
-        heureWeekend.textContent = element.hours_Start1 +":00 "+ element.hours_Close1 +":00"
-        alljour.appendChild(heureWeekend)
+
+    if (element.jour == 'Sat') {
+        const heureSat = document.createElement('p')
+        heureSat.textContent = element.hours_Start1 + ":00 " + element.hours_Close1 + ":00"
+        alljour.appendChild(heureSat)
         const heurevide = document.createElement('p')
         heurevide.textContent = "Kill Bg"
         heurevide.style = "color: white;"
         alljour.appendChild(heurevide)
-    }
-    else{
+    } else if (element.jour == 'Sun') {
+        const heureSun = document.createElement('p')
+        heureSun.textContent = element.hours_Start1 + ":00 " + element.hours_Close1 + ":30"
+        alljour.appendChild(heureSun)
+        const heurevide = document.createElement('p')
+        heurevide.textContent = "Close"
+        heurevide.style = "color: red;"
+        alljour.appendChild(heurevide)
+
+
+    } else {
         const heureDebut = document.createElement('p')
-        heureDebut.textContent = element.hours_Start1 +":00 "+ element.hours_Close1 +":00"
+        heureDebut.textContent = element.hours_Start1 + ":00 " + element.hours_Close1 + ":30"
         alljour.appendChild(heureDebut)
         const heureFin = document.createElement('p')
-        heureFin.textContent = element.hours_Start2 +":00 "+ element.hours_Close2 +":00"
+        heureFin.textContent = element.hours_Start2 + ":00 " + element.hours_Close2 + ":30"
         alljour.appendChild(heureFin)
     }
 }

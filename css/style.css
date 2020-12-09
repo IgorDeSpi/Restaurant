@@ -4,10 +4,22 @@
     src: url(/Fonts/gabriele-bad.ttf)
 }
 
-/* .container {
+.container {
     padding: 0 30px;
-} */
-
+    
+}
+nav.navbar {
+    background: transparent;
+    
+}
+body {
+    background-image: url(/Images/Canp\ olive.jpg);
+    min-height: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
 body>header>div>nav>div.navbar-brand>a>figure {
     display: flex;
     justify-content: center;
@@ -116,10 +128,12 @@ body>div:nth-child(2)>div>div:nth-child(2)>p>a {
     height: 165px;
 }
 
+
 body > main:nth-child(2) > iframe:nth-child(1){
     display: block;
     margin: auto;
 }
+
 
 /* Responsive for the cards */
 @media screen and (max-width: 770px) {
@@ -160,14 +174,14 @@ body > main:nth-child(2) > iframe:nth-child(1){
 .monday {
     display: inline-block;
     padding-right: 38px;
-    border: 2px white solid;
+    
     border-radius: 8%;
 }
 
 .jour {
     display: inline-block;
     padding: 10px;
-    border: 2px white solid;
+    
     border-radius: 8%;
 }
 
@@ -253,9 +267,24 @@ body>div>div:nth-child(5)>div {
 }
 
 /* ABOUT US  */
-body > header > div:nth-child(2) {
+#findUs {
     display: flex;
-    flex-direction: row;
+    flex-direction: row ;
+    
+}
+#findUs > div:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    
+}
+#findUs > div:nth-child(2) > h2 {
+    text-align: center;
+    font-size: 28px;
+}
+#findUs > div:nth-child(2) > p {
+    text-align: center;
 }
 
 body > main > section > div:nth-child(1) > main > p.has-text-centered > button {

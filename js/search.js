@@ -3,7 +3,7 @@ const sectionCarte = document.querySelector('.allCard');
 
 const menu =[
     {
-        image: './Images/FOOD/Food Cala.jpg',
+        image: './Images/FOOD/FoodCala.jpg',
         nom: 'Fried Squid',
         description: 'Fried squid, tamarind sauce.',
         prix: '12€',

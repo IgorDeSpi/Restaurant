@@ -1,6 +1,6 @@
 document.querySelector('.allCard').innerHTML = ''
 const sectionCarte = document.querySelector('.allCard');
-
+  
 const menu =[
     {
         image: './Images/FOOD/FoodCala.jpg',

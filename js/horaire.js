@@ -1,5 +1,5 @@
 //=====================================HORAIRE=====================================//
-document.querySelector('.mainhoraire').innerHTML = ''
+// document.querySelector('.mainhoraire').innerHTML = ''
 const main = document.querySelector('.mainhoraire');
 let weekday = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
 
@@ -97,7 +97,6 @@ for (let element of horaire) {
         heurevide.textContent = "Close"
         heurevide.style = "color: red;"
         alljour.appendChild(heurevide)
-
 
     } else {
         const heureDebut = document.createElement('p')

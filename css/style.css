@@ -113,6 +113,14 @@ body>div:nth-child(2)>div>div:nth-child(2)>p>a {
     object-fit: cover;
 }
 
+.card{
+    height: 100%;
+}
+
+.main{
+    height: 165px;
+}
+
 /* Responsive for the cards */
 @media screen and (max-width: 770px) {
     body>main {

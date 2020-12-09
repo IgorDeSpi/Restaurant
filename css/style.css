@@ -28,13 +28,21 @@ body>header>div>nav>div.navbar-brand>a>figure {
 
 body>header>div>nav>div.navbar-brand>a>img {
     border-radius: 100%;
+    transition: .2s;
+}
+body>header>div>nav>div.navbar-brand>a>img:hover {
+    /* -ms-transform: scale(1.25); 
+    -webkit-transform: scale(1.25);  */
+    transform: scale(1.25); 
 }
 
 .navbar-menu {
     font-size: 24px;
     font-family: 'gabriele-bad';
 }
-
+.navbar-item a:hover {
+    transform: scale(1.25); 
+}
 .navbar-start {
     margin: 20px;
 }

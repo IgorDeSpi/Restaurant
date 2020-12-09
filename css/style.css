@@ -94,14 +94,6 @@ body>div:nth-child(2)>div>div:nth-child(2)>p>a {
     text-decoration: underline;
 }
 
-
-
-@media screen and (max-width: 770px) {
-    body>main {
-        margin: 30px;
-    }
-}
-
 .footer {
     font-family: 'gabriele-bad';
 }
@@ -121,10 +113,35 @@ body>div:nth-child(2)>div>div:nth-child(2)>p>a {
     height: 165px;
 }
 
+body > main:nth-child(2) > iframe:nth-child(1){
+    display: block;
+    margin: auto;
+}
+
 /* Responsive for the cards */
 @media screen and (max-width: 770px) {
     body>main {
         margin: 30px;
+    }
+    .main{
+        height: auto;
+    }
+    body > main:nth-child(2) > iframe:nth-child(1){
+        height: 400px;
+        width: 450px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    body>main {
+        margin: 30px;
+    }
+    .main{
+        height: auto;
+    }
+    body > main:nth-child(2) > iframe:nth-child(1){
+        height: 250px;
+        width: 300px;
     }
 }
 

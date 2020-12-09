@@ -78,7 +78,7 @@ for (let element of menu){
     imageFigure.className = 'image is-4by3';
     imageZone.appendChild(imageFigure);
 
-    const image = document.createElement('figure');
+    const image = document.createElement('img');
     image.className = 'tailleImage';
     image.src = element.image;
     imageFigure.appendChild(image);
@@ -114,12 +114,92 @@ for (let element of menu){
     allAchat.className = 'has-text-centered'
     zonePrix.appendChild(allAchat);
 
-    const lienAchat = document.createElement('a');
+    const lienAchat = document.createElement('botton');
     lienAchat.className = 'button'
+    lienAchat.textContent = 'Add to Basket';
     allAchat.appendChild(lienAchat);
 
     const iconAchat = document.createElement('i');
     iconAchat.className = 'fas fa-cart-plus'
     lienAchat.appendChild(iconAchat);
 
+    const basket = document.createElement('p')
+
+}
+
+document.querySelector('#RechercheBar')
+.addEventListener('keyup', input => {
+	optionSearch(input.target.value.toLowerCase())
+})
+
+function optionSearch(pattern) {
+    const usertape = []
+  
+    for(let filtre of menu){
+        if(filtre.nom.toLowerCase().match(pattern))
+    	usertape.push(filtre)
+    }
+
+    const mainFiltre = document.querySelector('#results')
+    mainFiltre.innerHTML = ''
+    sectionCarte.innerHTML = ''
+
+    for (let element of usertape){
+        const carte = document.createElement('div');
+        carte.className = 'card column m-2 p-0 is-3';
+        mainFiltre.appendChild(carte);
+    
+        const imageZone = document.createElement('header');
+        imageZone.className = 'card-image';
+        carte.appendChild(imageZone);
+    
+        const imageFigure = document.createElement('figure');
+        imageFigure.className = 'image is-4by3';
+        imageZone.appendChild(imageFigure);
+    
+        const image = document.createElement('img');
+        image.className = 'tailleImage';
+        image.src = element.image;
+        imageFigure.appendChild(image);
+    
+        const mainCarte = document.createElement('main');
+        mainCarte.className = 'p-2 is-flex-direction-column main';
+        carte.appendChild(mainCarte);
+    
+        const titreCarte = document.createElement('h1');
+        titreCarte.className = 'card-header-title is-centered title is-4';
+        titreCarte.textContent = element.nom;
+        mainCarte.appendChild(titreCarte);
+    
+        const descriptionCarte = document.createElement('p');
+        descriptionCarte.className = 'subtitle is-6';
+        descriptionCarte.textContent = element.description;
+        mainCarte.appendChild(descriptionCarte);
+    
+        const zonePrix = document.createElement('footer');
+        zonePrix.className = 'p-2 is flex-direction-column';
+        carte.appendChild(zonePrix);
+    
+        const price = document.createElement('p');
+        price.textContent = 'Price';
+        zonePrix.appendChild(price);
+        
+        const prix = document.createElement('p');
+        prix.className = 'has-text-right has-text-weight-semibold';
+        prix.textContent = element.prix;
+        zonePrix.appendChild(prix);
+    
+        const allAchat = document.createElement('p');
+        allAchat.className = 'has-text-centered'
+        zonePrix.appendChild(allAchat);
+    
+        const lienAchat = document.createElement('botton');
+        lienAchat.className = 'button'
+        lienAchat.textContent = 'Add to Basket';
+        allAchat.appendChild(lienAchat);
+    
+        const iconAchat = document.createElement('i');
+        iconAchat.className = 'fas fa-cart-plus'
+        lienAchat.appendChild(iconAchat);
+    }
 }

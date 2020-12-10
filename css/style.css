@@ -13,7 +13,7 @@ nav.navbar {
 }
 
 body {
-    background-image: url(./Images/Canp\ olive.jpg);
+    background-image: url(/Images/Canp\ olive.jpg);
     min-height: 100%;
     background-repeat: no-repeat;
     background-attachment: fixed;

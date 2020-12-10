@@ -1,63 +1,63 @@
 document.querySelector('.allCard').innerHTML = ''
 const sectionCarte = document.querySelector('.allCard');
-
+  
 const menu =[
     {
-        image: './Images/Food/Food Cala.jpg',
+        image: './Images/FOOD/FoodCala.jpg',
         nom: 'Fried Squid',
         description: 'Fried squid, tamarind sauce.',
         prix: '12€',
     },
     {
-        image: './Images/Food/Food roulo.jpg',
+        image: './Images/FOOD/Food roulo.jpg',
         nom: 'Spring Rolls',
         description: 'Spring rolls, scampis, dried pork powder.',
         prix: '15€',
     },
     {
-        image: './Images/Food/Food papaye.jpg',
+        image: './Images/FOOD/Food papaye.jpg',
         nom: 'Papaya',
         description: 'Papaya salad, chilli sauce.',
         prix: '12€',
     },
     {
-        image: './Images/Food/Food palourdes.jpg',
+        image: './Images/FOOD/Food palourdes.jpg',
         nom: 'Clams',
         description: 'Clams, coconut milk, combava.',
         prix: '13€',
     },
     {
-        image: './Images/Food/Food nouilles.jpg',
+        image: './Images/FOOD/Food nouilles.jpg',
         nom: 'Rice Noodles',
         description: 'Round rice noodles, salsicia, chilli.',
         prix: '18€',
     },
     {
-        image: './Images/Food/Food poulet.jpg',
+        image: './Images/FOOD/Food poulet.jpg',
         nom: 'Chicken curry',
         description: "Boneless free-range chicken leg with curry, 'ban-mhi'.",
         prix: '17€',
     },
     {
-        image: './Images/Food/Food ventrechje.jpg',
+        image: './Images/FOOD/Food ventrechje.jpg',
         nom: 'Ventreche',
         description: 'Roasted prok belly with 5 flavors.',
         prix: '16€',
     },
     {
-        image: './Images/Food/Food-Lunch.jpg',
+        image: './Images/FOOD/Food-Lunch.jpg',
         nom: 'Bô lok lak',
         description: 'Pork cheek, poached eggs, radish, pak choï.',
         prix: '14€',
     },
     {
-        image: './Images/Food/Food-poiro.jpg',
+        image: './Images/FOOD/Food-poiro.jpg',
         nom: 'Leeks',
         description: 'Leeks, coconut milk, chilli.',
         prix: '8€',
     },
     {
-        image: 'Images/Food/Food desert.jpg',
+        image: 'Images/FOOD/Food desert.jpg',
         nom: 'Chocolate dessert',
         description: 'Home made chocolate yogurt ice cream pralines.',
         prix: '10€',
@@ -131,7 +131,7 @@ document.querySelector('#RechercheBar')
 
 function optionSearch(pattern) {
     const usertape = []
-  
+ 
     for(let filtre of menu){
         if(filtre.nom.toLowerCase().match(pattern))
     	usertape.push(filtre)

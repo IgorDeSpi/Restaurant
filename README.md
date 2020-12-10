@@ -17,7 +17,7 @@ We decided to work with multiple **HTML** pages and you can navigate between eac
 ![Presentation page](/Images/Presentation-page-1.png)
 ![Presentation page](/Images/Presentation-page-2.png)  
 
-* On the *Menu* page we've worked with the Bulma cards to create all of our Menu, on each card you have a button to add a meal to you basket, after having all your articles you can finally order everything you want.
+* On the *Menu* page we've worked with the Bulma cards to create all of our Menu, on each card you have a button to add a meal to your basket, after having all your articles you can finally order everything you want.
 
 ![Menu page](/Images/Menu-page.png) 
 

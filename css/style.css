@@ -13,12 +13,16 @@ nav.navbar {
 }
 
 body {
-    background-image: url(https://cemil1000.github.io/Restaurant/https://cemil1000.github.io/Restaurant/Images/Canp\ olive.jpg);
+    background-image: url(https://cemil1000.github.io/Restaurant/Images/Canp\ olive.jpg);
     min-height: 100%;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
+}
+
+div.container:nth-child(3) > div:nth-child(1) > div:nth-child(2){
+    font-family: 'gabriele-bad';
 }
 
 body>header>div>nav>div.navbar-brand>a>figure {
